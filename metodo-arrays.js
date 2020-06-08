@@ -8,14 +8,15 @@ var articulos = [
     { nombre: "Audifonos", costo: 1700 },
 ];
 
-
+//Método 1 filter: filtra una cosa especifica de un array, creando un array nuevo con ese valor
 var articulosFiltrados = articulos.filter(function(articulo) {
     return articulo.costo <= 500
 });
 
+//Método 2 map: mapea todo el contenido del array sin modificarlos
 var articulosMapeados = articulos.map(
     function(articulo) {
-        return articulo.nombre;
+        return articulo.nombre; //traigame de los articulos el nombre de articulo
     }
 )
 
